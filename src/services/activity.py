@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
 from sklearn import metrics
-import tensorflow as tf
 from keras.models import load_model
 from keras.utils import np_utils
 #%matplotlib inline
