@@ -1,12 +1,12 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy import stats
-from sklearn import metrics
+# from scipy import stats
+# from sklearn import metrics
 from keras.models import load_model
-from keras.utils import np_utils
+# from keras.utils import np_utils
 #%matplotlib inline
-plt.style.use('ggplot')
+# plt.style.use('ggplot')
 import csv
 
 # **********************************************
@@ -76,7 +76,7 @@ def detect_activity(df):
     # new_label = np.array(new_label)
     
     # Load the best_model file from folder model
-    model = load_model('./services/best_model.h5')
+    model = load_model('./src/services/best_model.h5')
     
     # model = load_model()
     
