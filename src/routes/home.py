@@ -9,5 +9,5 @@ home = Blueprint("Home" ,__name__ ,url_prefix= '/')
 
 @home.route('' , methods = ['GET'])
 def index():
-    return render_template('index.html')
-    # return '<h1> Hello World </h1>'
+    # return render_template('index.html')
+    return '<h1> HAR API </h1>'

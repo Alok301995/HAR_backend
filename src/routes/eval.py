@@ -1,5 +1,5 @@
 from flask import Blueprint , request
-from services.activity import detect_activity ,create_df
+from src.services.activity import detect_activity ,create_df
 
 eval = Blueprint("Eval" ,__name__ ,url_prefix= '/eval')
 
