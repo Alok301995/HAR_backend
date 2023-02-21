@@ -11,7 +11,7 @@ def index():
         # preProcess the data
         acc = [] 
         data = payload['data']
-        if len(data) != 0:
+        if len(data) != 0 and len(data) > 80:
             for i in data:
                 i[0] , i[1] ,i[2] = float(i[0]) , float(i[1]) , float(i[2])
                 acc.append(i)
@@ -20,5 +20,6 @@ def index():
         activity = detect_activity(df)
         print(activity)
         return {"data"  :activity}
+        
     else:
-        return {"data"  :"Recived Succefully by Get request "}
+        return {"Message"  :"Number of samp,e is less than 80"}

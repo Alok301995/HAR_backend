@@ -3,13 +3,13 @@ import os
 from flask_cors import CORS
 # from src.routes.eval import eval
 # from src.routes.home import home
-from src.routes.eval import eval
+from src.routes.eval import eval 
 from src.routes.home import home
 
 # Create Flask app
 
 
-app = Flask(__name__,instance_relative_config = True)
+app = Flask(__name__,template_folder='./src/template')
 CORS(app)
 
 
